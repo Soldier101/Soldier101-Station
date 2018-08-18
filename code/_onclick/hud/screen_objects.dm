@@ -128,7 +128,7 @@
 
 /obj/screen/inventory/MouseEntered()
 	..()
-	update_overlays()
+	add_overlays()
 
 /obj/screen/inventory/MouseExited()
 	..()
@@ -144,7 +144,7 @@
 		else
 			icon_state = icon_empty
 
-/obj/screen/inventory/proc/update_overlays()
+/obj/screen/inventory/proc/add_overlays()
 	var/mob/user = hud.mymob
 
 	cut_overlay(object_overlays)
@@ -153,26 +153,14 @@
 	if(hud && user && slot_id)
 		var/obj/item/holding = user.get_active_held_item()
 
-		if(!holding)
+		if(!holding || user.get_item_by_slot(slot_id))
 			return
 
-		var/obj/item/item_in_slot = user.get_item_by_slot(slot_id)
-		var/can_equip
-
-		if(item_in_slot)
-			GET_COMPONENT_FROM(storage, /datum/component/storage, item_in_slot)
-
-			if(!storage)
-				return // Don't show preview if there's a regular item
-			
-			can_equip = storage.can_be_inserted(holding, TRUE, user)
-		
 		var/image/item_overlay = image(holding)
 		item_overlay.alpha = 191
 		object_overlays += item_overlay
-		can_equip = user.can_equip(holding, slot_id, disable_warning = TRUE)
 		
-		if(!can_equip)
+		if(!user.can_equip(holding, slot_id, disable_warning = TRUE))
 			var/image/nope_overlay = image('icons/mob/screen_gen.dmi', "x")
 			nope_overlay.alpha = 128
 			nope_overlay.layer = item_overlay.layer + 1

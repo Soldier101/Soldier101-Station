@@ -52276,10 +52276,10 @@
 	dir = 4;
 	icon_state = "left";
 	name = "Medbay Delivery";
-	req_access_txt = "6"
+	req_access_txt = "28"
 	},
 /turf/open/floor/plasteel/dark,
-/area/medical/morgue)
+/area/crew_quarters/bar)
 "rxa" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
