@@ -169,8 +169,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 545,5
 		size = 75x20
-		anchor1 = 81,0
-		anchor2 = 97,0
+		anchor1 = 85,1
+		anchor2 = 97,5
 		background-color = #ffff80
 		border = line
 		saved-params = "is-checked"
@@ -181,8 +181,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 470,5
 		size = 75x20
-		anchor1 = 81,0
-		anchor2 = 97,0
+		anchor1 = 73,1
+		anchor2 = 85,5
 		background-color = #8080ff
 		border = line
 		saved-params = "is-checked"
@@ -204,8 +204,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 20,5
 		size = 75x20
-		anchor1 = 3,0
-		anchor2 = 19,0
+		anchor1 = 3,1
+		anchor2 = 15,5
 		background-color = none
 		border = line
 		saved-params = "is-checked"
@@ -216,8 +216,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 95,5
 		size = 75x20
-		anchor1 = 19,0
-		anchor2 = 34,0
+		anchor1 = 15,1
+		anchor2 = 27,5
 		background-color = none
 		border = line
 		saved-params = "is-checked"
@@ -228,8 +228,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 170,5
 		size = 75x20
-		anchor1 = 34,0
-		anchor2 = 50,0
+		anchor1 = 27,1
+		anchor2 = 38,5
 		background-color = none
 		border = line
 		saved-params = "is-checked"
@@ -240,8 +240,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 245,5
 		size = 75x20
-		anchor1 = 50,0
-		anchor2 = 66,0
+		anchor1 = 38,1
+		anchor2 = 50,5
 		background-color = none
 		border = line
 		saved-params = "is-checked"
@@ -252,8 +252,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 320,5
 		size = 75x20
-		anchor1 = 66,0
-		anchor2 = 81,0
+		anchor1 = 50,1
+		anchor2 = 62,5
 		background-color = none
 		border = line
 		saved-params = "is-checked"
@@ -264,8 +264,8 @@ window "infowindow"
 		type = BUTTON
 		pos = 395,5
 		size = 75x20
-		anchor1 = 81,0
-		anchor2 = 97,0
+		anchor1 = 62,1
+		anchor2 = 73,5
 		background-color = none
 		border = line
 		saved-params = "is-checked"
