@@ -31,6 +31,7 @@ As the Lawyer, you are the last bastion of roleplay-focused jobs. Even the curat
 There are at least 11 ways to get through plastic flaps. How many can you name?
 FEED ME A STRAY CAT
 Did you know that tossing the clown into a singularity will either increase or decrease its size by a large amount?
+<<<<<<< HEAD
 Giving the AI a law saying you're the best lizard will make alot of people happy!
 KNACK IS BACK BABYYY
 Who wants to speedrun setting up the engine?
@@ -53,3 +54,4 @@ High adventure, Higher pay! Join the Space Marines today!
 Hero is a four letter word!
 Space is wide, and good friends are too few!
 What's ligma?
+Most items have names longer than "soap"

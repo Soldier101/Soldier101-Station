@@ -1,6 +1,5 @@
 #define RESTART_COUNTER_PATH "data/round_counter.txt"
 
-GLOBAL_VAR(security_mode)
 GLOBAL_VAR(restart_counter)
 GLOBAL_PROTECT(security_mode)
 //WIP Character breaking filter
@@ -8,6 +7,7 @@ GLOBAL_PROTECT(security_mode)
 var/list/donators = world.file2list("config/donators.txt")
 var/list/diamonddonators = world.file2list("config/diamonddonators.txt")
 var/list/hubmsgs = world.file2list("strings/hub.txt")
+
 //This happens after the Master subsystem new(s) (it's a global datum)
 //So subsystems globals exist, but are not initialised
 /world/New()
@@ -16,8 +16,6 @@ var/list/hubmsgs = world.file2list("strings/hub.txt")
 	SetupExternalRSC()
 
 	GLOB.config_error_log = GLOB.world_manifest_log = GLOB.world_pda_log = GLOB.world_job_debug_log = GLOB.sql_error_log = GLOB.world_href_log = GLOB.world_runtime_log = GLOB.world_attack_log = GLOB.world_game_log = "data/logs/config_error.log" //temporary file used to record errors with loading config, moved to log directory once logging is set bl
-
-	CheckSecurityMode()
 
 	make_datum_references_lists()	//initialises global lists for referencing frequently used datums (so that we only ever do it once)
 
