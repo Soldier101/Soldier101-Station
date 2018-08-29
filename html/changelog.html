@@ -53,6 +53,65 @@
 
 		-->
 		<div class="commit sansserif">
+			<h2 class="date">28 August 2018</h2>
+			<h3 class="author">Denton updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="bugfix">The 10 second anti spam cooldown of night shift lighting now works properly.</li>
+				<li class="spellcheck">Added an examine message to APCs that mentions Alt-click and Ctrl-click (silicons only) behavior.</li>
+			</ul>
+			<h3 class="author">Garen updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="code_imp">adds a signal for screwdriver_act</li>
+			</ul>
+			<h3 class="author">SpaceManiac updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="code_imp">Multiple copies of a shuttle each get their own area instances (affects APCs and air alarms).</li>
+			</ul>
+			<h3 class="author">XDTM updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">The forcefield projector is now available ingame in the engineering protolathe. It can project up to 3 forcefields which act as transparent walls, and share a pool of health which is recharged over time. The projector must remain within 7 tiles of the forcefields to keep them active.</li>
+			</ul>
+
+			<h2 class="date">26 August 2018</h2>
+			<h3 class="author">CitrusGender updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="admin">Added note severity to [most] bans and the notes associated with them</li>
+				<li class="admin">Banning panel now has a severity option UI: Changed the UI of the note panel UI: Changed the UI again, added some icons, removed brackets in urls, fading out notes cannot be selected to expand the browser anymore</li>
+			</ul>
+			<h3 class="author">Floyd / Qustinnus (Credits to KMC for the sprites) updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">The Clown Car, your 18TC clown-only solution to asshole co-workers</li>
+				<li class="rscadd">Regular car implementation (makes it easier to add more cars if someone actually feels like adding those)</li>
+			</ul>
+			<h3 class="author">JJRcop updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="admin">Asay logs show "ADMINPRIVATE: ASAY:" again instead of just "ADMINPRIVATE:"</li>
+			</ul>
+			<h3 class="author">Naksu updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="code_imp">living and stack typecaches now use a shared instance where it makes sense, giving small memory savings</li>
+			</ul>
+			<h3 class="author">PKPenguin321 updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Integrated circuit medium screens have been readded. They are now called large screens. They now only work from your hands or on the ground when you're standing on top of them (NOT from pockets, lockers, backpacks, etc).</li>
+				<li class="bugfix">Roundstart cyborgs will now be properly referred to as "it."</li>
+			</ul>
+			<h3 class="author">SpaceManiac updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="admin">The shuttle manipulator now allows flying any shuttle to any port which will fit it.</li>
+				<li class="bugfix">The shuttle manipulator now allows fast-travelling shuttles with 5s remaining, down from 50s.</li>
+				<li class="refactor">Status displays have been refactored to be cleaner and more flexible.</li>
+				<li class="bugfix">The AI dying properly updates its status displays again.</li>
+			</ul>
+			<h3 class="author">intrnlerr updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="refactor">Refactored nettles to be reagent_containers</li>
+			</ul>
+			<h3 class="author">nicbn updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="soundadd">Nanotrasen shoes no longer contain Silencium. Now footsteps make noise! Sounds from Baystation.</li>
+			</ul>
+
 			<h2 class="date">25 August 2018</h2>
 			<h3 class="author">Denton updated:</h3>
 			<ul class="changes bgimages16">
@@ -1464,99 +1523,6 @@
 			<h3 class="author">ShizCalev updated:</h3>
 			<ul class="changes bgimages16">
 				<li class="bugfix">The blob will no longer take over space/mining/ect upon victory.</li>
-			</ul>
-
-			<h2 class="date">27 June 2018</h2>
-			<h3 class="author">Cyberboss updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="server">Logs and admin messages will now appear when you are using deprecated config settings and advise on upgrades</li>
-			</ul>
-			<h3 class="author">Dax Dupont updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="admin">Malf AI machine overloads now are logged/admin messaged.</li>
-				<li class="tweak">The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants. We've removed access requirements from liberation station vendors.</li>
-				<li class="bugfix">Fixes more href exploits in circuits</li>
-				<li class="refactor">Printing premade assemblies is no longer shitcode, time remaining had to go for this.</li>
-				<li class="admin">Filled holes in the logging of circuits</li>
-			</ul>
-			<h3 class="author">Denton updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">Camera networks, monitor screens and telescreens have been standardized.</li>
-				<li class="tweak">Motion-sensitive cameras now show a message when they trigger the alarm.</li>
-				<li class="bugfix">The Box/Meta auxillary base camera now works.</li>
-				<li class="bugfix">Bomb test site cameras now emit light, as intended.</li>
-				<li class="bugfix">Meta: Replaced the RD telescreen in the CE office with the correct one.</li>
-				<li class="tweak">Did you know that honey has antibiotic properties?</li>
-			</ul>
-			<h3 class="author">Irafas updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Hardsuit helmets now protect the wearer from pepperspray</li>
-				<li class="bugfix">Bucket helmets cannot have reagents transferred into them until after they are removed</li>
-			</ul>
-			<h3 class="author">MadmanMartian updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Cameras that are EMPed no longer sound an alarm</li>
-			</ul>
-			<h3 class="author">Mickyan updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Branca Menta won't make you starve and then kill you</li>
-				<li class="tweak">Fernet has been moved to contraband</li>
-			</ul>
-			<h3 class="author">Naksu updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="code_imp">Removed unused effect object that could be used to spawn a list of humans</li>
-			</ul>
-			<h3 class="author">Nichlas0010 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Mothpeople no longer push objects to move in 0-grav, if they can fly</li>
-			</ul>
-			<h3 class="author">SpaceManiac updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="refactor">AI static now uses visual contents and should perform better in theory.</li>
-				<li class="bugfix">Pocket protectors now work again.</li>
-				<li class="bugfix">URLs are no longer auto-linkified in character names and IC messages.</li>
-				<li class="bugfix">It is once again possible for Cargo to export mechs.</li>
-				<li class="bugfix">Deaths in the CTF arena are no longer announced to deadchat.</li>
-			</ul>
-			<h3 class="author">Tlaltecuhtli updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="tweak">tourettes doesnt stack on itself anymore</li>
-				<li class="bugfix">fixes cult shuttle message repeating</li>
-			</ul>
-			<h3 class="author">Zxaber updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Cyborgs can wear more hats now.</li>
-			</ul>
-			<h3 class="author">kevinz000 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">R&D deconstructors can now destroy things regardless of if there's a point value or material</li>
-			</ul>
-			<h3 class="author">nichlas0010 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">You should now receive your destroy AI objectives properly during IAA</li>
-			</ul>
-
-			<h2 class="date">24 June 2018</h2>
-			<h3 class="author">CitrusGender updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixed cyborgs not getting their names at round start</li>
-				<li class="bugfix">Fixed cyborgs and A.I.s being able to bypass appearance bans</li>
-			</ul>
-			<h3 class="author">SpaceManiac updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">The "Save Logs" option in the chat now actually works (IE 10+ only).</li>
-			</ul>
-			<h3 class="author">Time-Green updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Soda is no longer intangible to the laws of physics</li>
-			</ul>
-			<h3 class="author">cinder1992 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">The Captain can now go down with their station in style! Suicide animation added to the Officer's Sabre.</li>
-			</ul>
-			<h3 class="author">kevinz000 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Cyborgs now drop keys on deconstruction/detonation</li>
 			</ul>
 		</div>
 
