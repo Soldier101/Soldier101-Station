@@ -1398,6 +1398,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	restricted_roles = list("Clown")
 	surplus = 0 //No fun unless you're the clown!
 
+/datum/uplink_item/role_restricted/redbutton_syndicate
+	name = "The press of death"
+	desc = "A special button for a deadly prank. Pressing it makes the user explode! One-time use only. Do not press it yourself. Does not gib your target."
+	cost = 3
+	item = /obj/item/redbutton/syndicate
+	restricted_roles = list("Clown")
+
+
 /datum/uplink_item/role_restricted/ancient_jumpsuit
 	name = "Ancient Jumpsuit"
 	desc = "A tattered old jumpsuit that will provide absolutely no benefit to you. It fills the wearer with a strange compulsion to blurt out 'glorf'."
