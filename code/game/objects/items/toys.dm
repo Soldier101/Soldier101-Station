@@ -1023,6 +1023,40 @@
 	else
 		to_chat(user, "<span class='alert'>Nothing happens.</span>")
 
+
+/*
+ * Honk big red button
+ */
+
+
+/obj/item/redbutton/syndicate
+
+	name = "big red button"
+	desc = "A big, heavy, metal red button. Reads 'From HonkCo Pranks!' on the back."
+	icon = 'icons/obj/assemblies.dmi'
+	icon_state = "bigred"
+
+
+/obj/item/redbutton/attack_self(mob/user)
+	if (src.loc)
+		explosion(src.loc,0,2,3,flame_range = 3)
+		qdel(src)
+	else
+		return
+
+/obj/item/redbutton/syndicate/adminbus
+	name = "adminbus button"
+	desc = "adminbus much?"
+
+/obj/item/redbutton/attack_self(mob/user)
+	if (src.loc)
+		explosion(src.loc,10,20,40,flame_range = 80)
+		qdel(src)
+	else
+		return
+
+
+
 /*
  * Snowballs
  */
