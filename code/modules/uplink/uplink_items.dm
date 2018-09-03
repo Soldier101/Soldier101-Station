@@ -915,6 +915,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 1
 	surplus = 1
 
+
+/datum/uplink_item/role_restricted/redbutton_syndicate
+	name = "The press of death"
+	desc = "A special button for a deadly prank. Pressing it makes the user explode! One-time use only. Do not press it yourself. Does not gib your target."
+	cost = 3
+	item = /obj/item/redbutton/syndicate
+	include_modes = list(/datum/game_mode/nuclear/clown_ops)
+
 //Space Suits and Hardsuits
 /datum/uplink_item/suits
 	category = "Space Suits and Hardsuits"
@@ -1397,6 +1405,15 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/pneumatic_cannon/pie/selfcharge
 	restricted_roles = list("Clown")
 	surplus = 0 //No fun unless you're the clown!
+
+/datum/uplink_item/role_restricted/redbutton_syndicate
+	name = "The press of death"
+	desc = "A special button for a deadly prank. Pressing it makes the user explode! One-time use only. Do not press it yourself. Does not gib your target."
+	cost = 3
+	item = /obj/item/redbutton/syndicate
+	restricted_roles = list("Clown")
+
+
 
 /datum/uplink_item/role_restricted/ancient_jumpsuit
 	name = "Ancient Jumpsuit"
