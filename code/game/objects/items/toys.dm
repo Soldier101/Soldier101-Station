@@ -1037,7 +1037,7 @@
 	icon_state = "bigred"
 
 
-/obj/item/redbutton/attack_self(mob/user)
+/obj/item/redbutton/syndicate/attack_self(mob/user)
 	if (src.loc)
 		explosion(src.loc,0,2,3,flame_range = 3)
 		qdel(src)
@@ -1048,7 +1048,7 @@
 	name = "adminbus button"
 	desc = "adminbus much?"
 
-/obj/item/redbutton/attack_self(mob/user)
+/obj/item/redbutton/syndicate/adminbus/attack_self(mob/user)
 	if (src.loc)
 		explosion(src.loc,10,20,40,flame_range = 80)
 		qdel(src)
