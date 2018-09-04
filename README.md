@@ -3,17 +3,15 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com) [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-**Website:** https://www.beestation13.com
-**Code:** https://github.com/beestation/beestation
-**Wiki** https://beestation.beeskee.com/wiki
+
+
 
  
 ## DOWNLOADING
 
-Option 1:
-Follow this: https://www.beestation13.org/wiki/Setting_up_git
 
-Option 2: Download the source code as a zip by clicking the ZIP button in the
+
+Option 1: Download the source code as a zip by clicking the ZIP button in the
 code tab of https://github.com/tgstation/tgstation
 (note: this will use a lot of bandwidth if you wish to update and is a lot of
 hassle if you want to make any changes at all, so it's not recommended.)
