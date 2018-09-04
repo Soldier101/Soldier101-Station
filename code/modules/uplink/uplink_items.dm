@@ -413,6 +413,13 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	surplus = 35
 	include_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
 
+/datum/uplink_item/stealthy_weapons/redbutton_syndicate
+	name = "The Honkerpress"
+	desc = "A special button for a special clown. Pressing it makes you explode! One-time use. Does not gib target."
+	cost = 5
+	item = /obj/item/redbutton/syndicate
+	include_modes = list(/datum/game_mode/nuclear/clown_ops)
+
 // Ammunition
 /datum/uplink_item/ammo
 	category = "Ammunition"
@@ -916,13 +923,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	surplus = 1
 
 
-/datum/uplink_item/role_restricted/redbutton_syndicate
-	name = "The press of death"
-	desc = "A special button for a deadly prank. Pressing it makes the user explode! One-time use only. Do not press it yourself. Does not gib your target."
-	cost = 3
-	item = /obj/item/redbutton/syndicate
-	include_modes = list(/datum/game_mode/nuclear/clown_ops)
-
 //Space Suits and Hardsuits
 /datum/uplink_item/suits
 	category = "Space Suits and Hardsuits"
@@ -1406,15 +1406,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	restricted_roles = list("Clown")
 	surplus = 0 //No fun unless you're the clown!
 
-/datum/uplink_item/role_restricted/redbutton_syndicate
-	name = "The press of death"
-	desc = "A special button for a deadly prank. Pressing it makes the user explode! One-time use only. Do not press it yourself. Does not gib your target."
-	cost = 3
-	item = /obj/item/redbutton/syndicate
-	restricted_roles = list("Clown")
-
-
-
 /datum/uplink_item/role_restricted/ancient_jumpsuit
 	name = "Ancient Jumpsuit"
 	desc = "A tattered old jumpsuit that will provide absolutely no benefit to you. It fills the wearer with a strange compulsion to blurt out 'glorf'."
@@ -1499,6 +1490,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/vehicle/sealed/car/clowncar
 	cost = 18
 	restricted_roles = list("Clown")
+
+/datum/uplink_item/role_restricted/redbutton_syndicate
+	name = "The Honkerpress"
+	desc = "A special button for a special clown. Pressing it makes you explode! One-time use. Does not gib target."
+	cost = 5
+	item = /obj/item/redbutton/syndicate
+	restricted_roles = list("Clown")
+	surplus = 10 // Alright, you can have *some* fun.
 
 // Pointless
 /datum/uplink_item/badass
