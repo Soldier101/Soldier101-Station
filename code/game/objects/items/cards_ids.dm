@@ -125,6 +125,13 @@
 	var/assignment = null
 	var/access_txt // mapping aid
 
+/obj/item/card/id/toy/captains_spare
+	name = "captain's spare ID"
+	desc = "A plastic ID card painted gold with a sticker."
+	icon_state = "gold"
+	item_state = "gold_id"
+	lefthand_file = 'icons/mob/inhands/equipment/idcards_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/idcards_righthand.dmi'
 
 
 /obj/item/card/id/Initialize(mapload)
